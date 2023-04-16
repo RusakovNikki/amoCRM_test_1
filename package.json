@@ -1,0 +1,15 @@
+{
+    "name": "frontend_work_first",
+    "version": "1.0.0",
+    "description": "Напишите реализацию наиболее точного таймера.",
+    "main": "index.js",
+    "scripts": {
+        "start": "node index.js",
+        "build": "npx tailwindcss -i ./src/input.css -o ./dist/output.css"
+    },
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "tailwindcss": "^3.3.1"
+    }
+}

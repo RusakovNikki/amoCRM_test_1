@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link href="./dist/output.css" rel="stylesheet" />
+        <title>1 task</title>
+    </head>
+    <body class="bg-black">
+        <main class="flex w-full h-screen justify-center items-center">
+            <div class="flex flex-col w-2/3 items-center">
+                <div class="timer mb-8 relative transition-all" hidden>
+                    <svg width="400" height="400">
+                        <circle
+                            class="circle origin-center -rotate-90 transition-all"
+                            stroke="yellow"
+                            stroke-width="4"
+                            cx="200"
+                            cy="200"
+                            r="192"
+                        />
+                        <!-- radius = w / 2 - strokeWidth * 2 -->
+                    </svg>
+                    <span
+                        class="text-2xl text-white absolute top-2/4 left-1/2 -translate-x-1/2 -translate-y-1/2"
+                    ></span>
+                </div>
+                <form>
+                    <div
+                        class="w-full flex flex-row justify-between transition-all"
+                    >
+                        <input
+                            placeholder="Seconds"
+                            type="text"
+                            class="min-w-min w-3/4 text-2xl px-5 text-white py-3 border bg-inherit hover:placeholder:text-white transition-all"
+                        />
+                        <button
+                            class="w-1/5 border rounded-tr-md rounded-br-2xl animate-pulse text-white hover:bg-yellow-500 hover:animate-none hover:text-black transition-all hover:font-medium"
+                        >
+                            Start
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </main>
+
+        <script src="./index.js"></script>
+    </body>
+</html>
